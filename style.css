@@ -43,7 +43,7 @@ h4 {
     color: crimson;
 }
 
-/* ////////////////////////////////////////////////// */
+/* ////////////////////// Header Style //////////////////////////// */
 header {
     background-color: black;
 }
@@ -72,6 +72,10 @@ header .nav .menu ul li a {
 
 header .nav .menu ul li:first-child a {
     padding-left: 0px;
+}
+
+header .nav .menubar {
+    display: none;
 }
 
 header .nav .login a {
@@ -122,9 +126,9 @@ header .banner .right-banner img {
     transition: transform 15s ease;
 }
 
-/* ///////////////////////////////////////////////////// */
+/* ///////////////////// Player Style //////////////////////////////// */
 .player-team {
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 
 .players {
@@ -151,7 +155,7 @@ header .banner .right-banner img {
     margin: 10px 0px;
 }
 
-/* ///////////////////////////////////////////////////// */
+/* //////////////////// Highlights Style ///////////////////////////////// */
 .highlights {
     background-color: #ff5e62;
     padding: 4% 0%;
@@ -204,9 +208,9 @@ header .banner .right-banner img {
     transition: transform 17s ease;
 }
 
-/* ///////////////////////////////////////////////////// */
+/* /////////////////// Pricing Style ////////////////////////////////// */
 .top-section {
-    width: 50%;
+    width: 60%;
     margin: auto;
     text-align: center;
     padding: 6% 0% 0%;
@@ -270,4 +274,253 @@ header .banner .right-banner img {
 .pricing .pricing-table button:hover {
     color: #FFFFFF;
     background-image: linear-gradient(to right, crimson, #ff5e62);
+}
+
+/* //////////////////////  Footer  Style /////////////////////////////// */
+footer {
+    padding-top: 6%;
+}
+
+footer .logo {
+    width: 30%;
+    margin: auto;
+}
+
+footer .logo img {
+    width: 100%;
+}
+
+footer .icon {
+    width: 30%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer .icon a {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    color: #10437A;
+    background-color: #e7e7e7;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+footer .icon a i {
+    margin: 8px 0px;
+
+}
+
+footer .copy {
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2% 0%;
+}
+
+/*  //////////////////////////////////
+                Media Screen
+    ///////////////////////////////// */
+@media screen and (min-width:280px) and (max-width:688px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    header .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 0% 1.5%;
+    }
+
+    header .nav .menu ul {
+        display: none;
+    }
+
+    header .nav .menubar {
+        display: block;
+    }
+
+    header .nav .menubar i {
+        color: #ffffff;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+
+    header .banner {
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    header .banner .left-banner {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    header .banner .right-banner {
+        width: 50%;
+        margin: 30px auto;
+
+    }
+
+    .players {
+        margin-top: 8%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+
+    }
+
+    .players .player {
+        border: 10px solid #FFFFFF;
+        box-shadow: 10px 10px 30px #e9e9e9;
+    }
+
+    .highlight-area {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .highlight-area .left-highlight {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .highlight-area .left-highlight p {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-top: 16px;
+    }
+
+    .highlight-area .right-highlight {
+        width: 45%;
+        margin: 30px auto;
+    }
+
+    .top-section {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 6% 0% 0%;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-gap: 50px;
+        padding: 6% 0% 6%;
+        justify-content: center;
+    }
+
+    .pricing .pricing-table {
+        box-shadow: 0px 0px 0px;
+        border: 3px solid crimson;
+    }
+
+    footer .logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    footer .icon {
+        width: 50%;
+        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    header .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 0% 1.5%;
+    }
+
+    header .nav .menu ul {
+        display: none;
+    }
+
+    header .nav .menubar {
+        display: block;
+    }
+
+    header .nav .menubar i {
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    header .banner .left-banner {
+        width: 50%;
+    }
+
+    header .banner .right-banner {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .players {
+        margin-top: 8%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+
+    }
+
+    .players .player {
+        border: 10px solid #FFFFFF;
+        box-shadow: 10px 10px 30px #e9e9e9;
+    }
+
+    .top-section {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 6% 0% 0%;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(1, 60%);
+        grid-gap: 50px;
+        padding: 6% 0% 6%;
+        justify-content: center;
+    }
 }
